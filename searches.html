@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Search Page</title>
+        <link rel = "stylesheet" type = "text/css" href = "css/searches.css">
+        <script src="jquery-3.2.1.js"></script>
+    </head>
+    
+    <body>    
+        <!--header part-->
+        <div class="nav">
+            <form action="searches.html" method="get">
+                <div id="input_container">
+                    <input class="searchbar" id="in" type="text" name="search" placeholder="Search..">
+                </div>
+            </form>
+            <h3>The Sablog</h3>
+            <div class="logo">
+            </div>
+            <button class="settings">
+            </button>
+        </div>
+        
+        <div class="linepink">
+        </div>
+        
+        <section style="color: #fff;">
+            <nav class="fill">
+                <ul>
+<!--INSERT THE LINKS OF FEED AND PICTURES HERE -->
+                    <li><a href="index.html">Feed</a></li>
+                    <li><a href="InAlbum.html">Pictures</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+        <div class="po">
+            <div class="feed"></div>
+        </div>
+        
+        <div class = "album">
+            <!--outside part-->
+            <div class="row">
+            </div>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                    
+                    <!--slideshow top-->
+                    <div class="slide">
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="caption-container">
+                    </div>
+
+                    <!--bottom part during slide show-->
+                    <div class="bottom">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="albumbar"></div>
+        
+        <div class="sidebar"></div>
+        
+        <script src="js/searches.js"></script>
+    </body>
+</html>
