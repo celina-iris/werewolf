@@ -23,7 +23,7 @@ function filter() {
     if(search) {
         filterUsers(search);
         filterAlbums(search);
-        filterPhotos(search);
+        //filterPhotos(search);
         filterPosts(search);
     }
 }
