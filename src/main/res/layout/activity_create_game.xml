@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.dlsu.mobapde.werewolf.CreateGameActivity">>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/main_bg"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title"
+            android:layout_gravity="center_horizontal"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:adjustViewBounds="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="20dp">
+
+            <View
+                android:id="@+id/rectangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/rectangle_shape" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/rectangle"
+                android:layout_alignTop="@id/rectangle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Create New Game"
+                android:textColor="#ebebeb"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <!--android:layout_margin="30dp"-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="#ebebeb"
+                    android:gravity="center"
+                    android:hint="name"
+                    android:textColor="#ebebeb"
+                    android:textColorHint="#B9B9B9"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                    <Button
+                        android:id="@+id/b_create_game"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:backgroundTint="#324a6c"
+                        android:text="Create!"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <!--android:layout_margin="5dp"-->
+
+                    <Button
+                        android:id="@+id/b_cancel"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text="Cancel"
+                        android:textColor="#fff"
+                        android:backgroundTint="#bb4b53"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"/>
+                    <!--android:layout_margin="5dp"-->
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

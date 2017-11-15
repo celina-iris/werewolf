@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.dlsu.mobapde.werewolf.RegisterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/main_bg"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/title"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/title"
+            android:adjustViewBounds="true" />
+        <!-- adjustViewBounds removes unnecessary spaces -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="316dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginTop="35dp">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#fff"
+                android:gravity="center"
+                android:hint="email"
+                android:inputType="textEmailAddress"
+                android:textColor="#fff"
+                android:textColorHint="#b7b7b7"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#fff"
+                android:gravity="center"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textColor="#fff"
+                android:textColorHint="#b7b7b7"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#324a6c"
+                android:text=" Register "
+                android:textColor="#fff"
+                android:textSize="20dp" />
+            <!--android:background="@drawable/login_button"-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account?"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:id="@+id/account"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login!"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/sign_up"
+                    android:layout_toRightOf="@id/account" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
